@@ -1,6 +1,7 @@
 <?php 
  $thispagename=$post->post_name;
     $terms="bureau";
+
     if ($thispagename == "bureau") 
     {
         $terms="bureau";
@@ -14,18 +15,37 @@
         $terms="assemblee-generale";
     }
    
-    $_posts = new WP_Query( array(
-        'post_type'         => 'membres',
-        'posts_per_page'    => 100,
-        'order'             => 'ASC',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'member_type',
-                'field' => 'slug',
-                'terms' => $terms,
+    if($terms == "bureau")
+    {
+        $_posts = new WP_Query( array(
+            'post_type'         => 'membres',
+            'posts_per_page'    => 100,
+            'order'             => 'ASC',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'member_type',
+                    'field' => 'slug',
+                    'terms' => $terms,
+                )
             )
-        )
-    ));
+        ));
+    }
+    else{
+        $_posts = new WP_Query( array(
+            'post_type'         => 'membres',
+            'posts_per_page'    => 100,
+            'meta_key'          => 'member_lastname',
+            'orderby'           => 'meta_value',
+            'order'             => 'ASC',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'member_type',
+                    'field' => 'slug',
+                    'terms' => $terms,
+                )
+            )
+        ));      
+    }
 
 if( $_posts->have_posts() ) :
 while ( $_posts->have_posts() ) : $_posts->the_post();

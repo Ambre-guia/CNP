@@ -57,11 +57,6 @@
         </section>
     </footer>
 <!-- scripts -->
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script src="vendor/hamburgers.js" async></script>
-
 <?php wp_footer(); ?>
 </body>
 </html>
