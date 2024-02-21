@@ -9,9 +9,9 @@ if( $cta_bg ) :
 ?>
 <section id="parcours" class="cta-section" style="background-image: url('<?= $cta_bg['url']?>');">
     <div class="container">
-        <h2 class="font-title center"><?= $cta_title; ?></h2>
-        <p class="cta-subtitle center"><?= $cta_subtitle; ?></p>    
-       <p class="center"><a href="<?= $cta_big_cta_url; ?>" class="btn btn-orange"><?= $cta_big_cta_text; ?></a></p> 
+        <h2 class="font-title"><?= $cta_title; ?></h2>
+        <p class="cta-subtitle"><?= $cta_subtitle; ?></p>    
+        <a href="<?= $cta_big_cta_url; ?>" class="btn btn-orange"><?= $cta_big_cta_text; ?></a>
     </div>
 </section>
 <?php endif ;?>
