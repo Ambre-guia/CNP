@@ -1502,3 +1502,24 @@ li.current_page_item > a {
 .sidebar-block ul li {
   margin-bottom: 10px;
 }
+
+
+/* PLUGIN STYLE */
+
+/* Event Calendar */
+.tribe-common .tribe-common-c-btn-border {
+  color: var(--main_primary_medium);
+  border-color: var(--main_primary_medium);
+}
+
+.tribe-events
+  .tribe-events-c-subscribe-dropdown
+  .tribe-events-c-subscribe-dropdown__button:hover,
+.tribe-events .tribe-events-c-search__button,
+.tribe-events button.tribe-events-c-search__button {
+  background-color: var(--main_primary_medium);
+}
+.tribe-events button.tribe-events-c-search__button:hover {
+  background-color: var(--main_primary_medium);
+  opacity: 0.8;
+}
