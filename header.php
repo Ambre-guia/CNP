@@ -29,7 +29,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php echo esc_url(get_bloginfo('pingback_url')); ?>">
     <?php wp_head(); ?>
-    <?php $logo = get_logo(); ?>
+    <?php $logo = get_custom_logo(); ?>
 </head>
 
 <body <?php body_class(); ?>>
