@@ -29,11 +29,11 @@
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php echo esc_url(get_bloginfo('pingback_url')); ?>">
     <?php wp_head(); ?>
-    <?php $logo = get_logo(); ?>
+    <?php //$logo = get_logo(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    <?php // var_dump($logo); 
+    <?php var_dump(get_logo();); 
     ?>
     <header class="mast-head">
         <nav class="main-nav container">
