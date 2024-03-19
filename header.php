@@ -33,8 +33,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <?php // var_dump($logo); 
-    ?>
     <header class="mast-head">
         <nav class="main-nav container">
             <a href="<?php echo home_url(); ?>" class="logo"><img src="<?= $logo['url']; ?>" alt="Logo"></a>
