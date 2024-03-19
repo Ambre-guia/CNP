@@ -35,7 +35,7 @@
 <body <?php body_class(); ?>>
     <header class="mast-head">
         <nav class="main-nav container">
-            <a href="<?php echo home_url(); ?>" class="logo"><img src="<?= $logo['url']; ?>" alt="Logo"></a>
+            <a href="<?php echo home_url(); ?>" class="logo"><img src="<?php $logo['url']; ?>" alt="Logo"></a>
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'header-menu',
