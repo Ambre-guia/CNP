@@ -1,4 +1,4 @@
-# Thème parent de CNP - Projet WordPress Généeale
+# Thème parent de CNP - Projet WordPress
 
 Ce projet WordPress vise à fournir une solution complète pour le site web de Parent de CNP en utilisant divers plugins et fonctionnalités pour répondre aux besoins spécifiques du client.
 
