@@ -505,7 +505,7 @@ option {
   padding: 3em 0;
 }
 .mast-foot a {
-  color: var(--main_primary_dark_medium);
+  color: var(--main_primarymedium);
 }
 .mast-foot-columns {
   display: flex;
