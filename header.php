@@ -29,14 +29,14 @@
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php echo esc_url(get_bloginfo('pingback_url')); ?>">
     <?php wp_head(); ?>
-    <?php $logo = get_custom_logo(); ?>
+    <?php $logo = get_logo(); ?>
 </head>
 
 <body <?php body_class(); ?>>
     <?php var_dump($logo); ?>
     <header class="mast-head">
         <nav class="main-nav container">
-            <a href="<?php echo home_url(); ?>" class="logo"><img src="<?php $logo[0]; ?>" alt="Logo"></a>
+            <a href="<?php echo home_url(); ?>" class="logo"><img src="<?php $logo['link']; ?>" alt="Logo"></a>
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'header-menu',
