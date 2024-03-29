@@ -20,9 +20,17 @@ function my_body_class( $classes ) {
 }
 // add_filter( 'body_class','my_body_class' );
 
+function get_logo() {
+    if(is_front_page()){
+    $logo = get_field('site_logo', 'option');
+    }
+    else{
+    $logo = get_field('site_logo_dark', 'option');
+    }
+    return $logo;
 
-
-
+}
+add_filter( 'hook', 'manage_logo' );
     
 
 /**
