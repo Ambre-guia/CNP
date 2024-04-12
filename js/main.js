@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function () {
   init();
 });
 
@@ -34,6 +34,32 @@ function initEvents() {
 }
 
 function initTriggers() {
+  if (jQuery(".logo-slider")[0]) {
+    var slider = tns({
+      container: ".logo-slider",
+      loop: true,
+      controls: false,
+      nav: false,
+      items: 1,
+      gutter: 5,
+      edgePadding: 60,
+      autoplay: true,
+      autoplayButtonOutput: false,
+      autoplayHoverPause: true,
+      responsive: {
+        640: {
+          gutter: 0,
+        },
+        768: {
+          gutter: 5,
+        },
+        991: {
+          gutter: 5,
+          items: 5,
+        },
+      },
+    });
+  }
   if (jQuery(".agenda-slider")[0]) {
     var slider = tns({
       container: ".agenda-slider",

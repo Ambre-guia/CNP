@@ -1,6 +1,6 @@
 <section id="partners" class="bg-lightgrey">
     <div class="section-title font-title">Composition du CNP</div>
-    <div class="logo-gallery">
+    <div class="logo-gallery logo-slider">
     <?php
         // Check rows existexists.
         if( have_rows('image_repeater') ):
