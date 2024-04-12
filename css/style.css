@@ -1179,7 +1179,7 @@ option {
 
 .logo-gallery .logo-item {
   max-width: 180px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   padding: 1em;
   background: #fff;
@@ -1502,7 +1502,6 @@ li.current_page_item > a {
 .sidebar-block ul li {
   margin-bottom: 10px;
 }
-
 
 /* PLUGIN STYLE */
 
