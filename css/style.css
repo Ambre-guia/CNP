@@ -1336,6 +1336,9 @@ li.current_page_item > a {
   margin-top: 2em;
   padding-top: 1em;
 }
+.sidebar + .post-feed {
+  margin-top: 60px;
+}
 
 .card-news.card-width-picture {
   background-color: var(--lightgrey);
