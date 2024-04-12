@@ -17,8 +17,8 @@ function my_body_class( $classes ) {
     
     return $classes;
      
-}
-// add_filter( 'body_class','my_body_class' );
+};
+// add_filter( 'body_class','my_body_class' )
 
 function get_logo() {
     if(is_front_page()){
