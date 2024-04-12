@@ -7,19 +7,20 @@
             // Loop through rows.
             while( have_rows('image_repeater') ) : the_row();
                 // Load sub field value.
-                $image = get_sub_field('image_repeater_img');
-                $link = "#";
-                if(get_sub_field('image_repeater_url'))
-                $link = get_sub_field('image_repeater_url');
-                $target = "";
+                var_dump(get_sub_field('image_repeater_url'));
+                // $image = get_sub_field('image_repeater_img');
+                // $link = "#";
+                // if(get_sub_field('image_repeater_url'))
+                // $link = get_sub_field('image_repeater_url');
+                // $target = "";
 
-                if($link){
-                    $link = $link['url'];
-                    $target = $link['target'];
+                // if($link){
+                //     $link = $link['url'];
+                //     $target = $link['target'];
                   
-                }
-                else
-                $link="#";
+                // }
+                // else
+                // $link="#";
                 
                 // Do something...
                 ?>
