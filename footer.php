@@ -41,7 +41,6 @@
             <span>©<?php echo date("Y"); ?> <?php echo get_bloginfo('name'); ?> - Made with love by <a class="orange" href="https://agence-alfred.com/">Alfred</a></span>
 
             <nav class="bottom-navigation">
-                <a href="/presse/">Presse</a>
                 <a href="/mentions-legales/">Mentions légales</a>
                 <a href="/donnees-personnelles/">Données personnelles</a>
             </nav>
