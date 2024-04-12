@@ -15,7 +15,7 @@
 
                 if($link){
                     $link = $link['url'];
-                    $target = $link['target'];
+                    $target = "_blank";
                   
                 }
                 else
@@ -24,7 +24,7 @@
                 // Do something...
                 ?>
         <span class="logo-item">
-            <a href="<?= $link;?>" target="<?php echo esc_attr($target);?>">
+            <a href="<?= $link;?>" target="<?= $target;?>">
                 <img src="<?= $image['url'];?>" alt="<?= $image['alt'];?>" class="item-icon" >
             </a>
         </span>
