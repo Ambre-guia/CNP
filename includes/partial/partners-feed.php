@@ -24,11 +24,7 @@
                 
                 // Do something...
                 ?>
-        <span class="logo-item">
-            <a href="<?= $link;?>" target="<?= $target;?>">
-                <img src="<?= $image['url'];?>" alt="<?= $image['alt'];?>" class="item-icon" >
-            </a>
-        </span>
+        
         <?php
             endwhile;
         endif;
