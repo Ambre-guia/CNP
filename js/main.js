@@ -56,7 +56,7 @@ function initTriggers() {
           gutter: 5,
         },
         991: {
-          gutter: 5,
+          gutter: 2,
           items: 5,
         },
       },
