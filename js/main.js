@@ -38,8 +38,8 @@ function initTriggers() {
     var slider = tns({
       container: ".logo-slider",
       loop: true,
-      controls: false,
-      nav: true,
+      controls: true,
+      nav: false,
       items: 1,
       gutter: 5,
       edgePadding: 60,
