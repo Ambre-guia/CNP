@@ -39,7 +39,7 @@ function initTriggers() {
       container: ".logo-slider",
       loop: true,
       controls: false,
-      nav: false,
+      nav: true,
       items: 1,
       gutter: 5,
       edgePadding: 60,
