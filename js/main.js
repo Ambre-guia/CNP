@@ -39,6 +39,8 @@ function initTriggers() {
       container: ".logo-slider",
       loop: true,
       controls: true,
+      navPosition: "bottom",
+      navPosition: "bottom",
       nav: false,
       items: 1,
       gutter: 5,
