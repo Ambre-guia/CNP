@@ -41,6 +41,7 @@ function initTriggers() {
       controls: false,
       navPosition: "bottom",
       navPosition: "bottom",
+      slideBy: 'page',
       nav: true,
       items: 1,
       gutter: 5,
