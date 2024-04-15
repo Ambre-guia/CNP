@@ -52,6 +52,7 @@ function initTriggers() {
       responsive: {
         640: {
           gutter: 0,
+          items: 3,
         },
         768: {
           gutter: 5,
