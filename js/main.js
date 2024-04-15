@@ -49,6 +49,35 @@ function initTriggers() {
       autoplay: true,
       autoplayButtonOutput: false,
       autoplayHoverPause: true,
+      getIndexMax: (function () {
+        if (fixedWidth) {
+          return function () {
+            return center && !loop
+              ? slideCount - 1
+              : Math.ceil(-rightBoundary / (fixedWidth + gutter));
+          };
+        } else if (autoWidth) {
+          return function () {
+            for (var i = slideCountNew; i--; ) {
+              //if (slidePositions[i] >= - rightBoundary ) { return i; }
+              // Fix for autoWidth transformation not happening in time to avoid a gap of blank slides.
+              if (slidePositions[i] >= -rightBoundary) {
+                return i - slideCount;
+              }
+            }
+          };
+        } else {
+          return function () {
+            if (center && carousel && !loop) {
+              return slideCount - 1;
+            } else {
+              return loop || carousel
+                ? Math.max(0, slideCountNew - Math.ceil(items))
+                : slideCountNew - 1;
+            }
+          };
+        }
+      })(),
       responsive: {
         640: {
           gutter: 0,
