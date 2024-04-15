@@ -38,10 +38,10 @@ function initTriggers() {
     var slider = tns({
       container: ".logo-slider",
       loop: true,
-      controls: true,
+      controls: false,
       navPosition: "bottom",
       navPosition: "bottom",
-      nav: false,
+      nav: true,
       items: 1,
       gutter: 5,
       edgePadding: 60,
