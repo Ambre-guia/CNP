@@ -1555,7 +1555,8 @@ li.current_page_item > a {
 }
 .tribe-events .tribe-events-c-view-selector__list-item-text,
 .tribe-common .tribe-common-h7,
-.tribe-common .tribe-common-h8 {
+.tribe-common .tribe-common-h8,
+.tribe-events .tribe-events-calendar-month__day-date-daynum {
   color: var(--main_primary);
 }
 .tribe-events .tribe-events-calendar-list__event-datetime {
