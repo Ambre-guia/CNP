@@ -1539,7 +1539,7 @@ li.current_page_item > a {
 .tribe-common .tribe-common-h2,
 .tribe-common .tribe-common-h7,
 .tribe-common .tribe-common-h8,
-.tribe-events .tribe-events-calendar-list__event-date-tag-weekday,
+.tribe-events .tribe-events-calendar-list__event-datetime,
 .tribe-events button.tribe-events-c-top-bar__datepicker-button {
   color: var(--main_primary);
   font-family: var(--font-title);
@@ -1559,6 +1559,8 @@ li.current_page_item > a {
 .tribe-events .tribe-events-calendar-month__day-date-daynum {
   color: var(--main_primary);
 }
-.tribe-events .tribe-events-calendar-list__event-datetime {
+.tribe-events .tribe-events-calendar-list__event-date-tag-weekday,
+.tribe-common .tribe-common-h5 {
   color: var(--main_secondary);
+  font-family: var(--font-title);
 }
