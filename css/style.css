@@ -1544,7 +1544,9 @@ li.current_page_item > a {
   color: var(--main_primary);
   font-family: var(--font-title);
 }
-.tribe-common--breakpoint-medium.tribe-common .tribe-common-b2 {
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-b2,
+.tribe-events-content,
+.tribe-events-event-meta {
   font-family: var(--font-default);
 }
 .tribe-common--breakpoint-medium.tribe-events
@@ -1569,4 +1571,8 @@ li.current_page_item > a {
 .tribe-common .tribe-common-anchor-thin:focus,
 .tribe-common .tribe-common-anchor-thin:hover {
   border-bottom: 1px solid var(--main_primary);
+}
+.tribe-events-meta-group a {
+  color: var(--main_secondary);
+  font-family: var(--font-default);
 }
