@@ -1580,6 +1580,7 @@ li.current_page_item > a {
 .tribe-events-content a {
   border-bottom-color: var(--main_secondary);
 }
-.tribe-events-content {
+.tribe-events-content,
+.tribe-events-meta-group {
   color: var(--grey);
 }
