@@ -1565,3 +1565,8 @@ li.current_page_item > a {
   color: var(--main_secondary);
   font-family: var(--font-title);
 }
+.tribe-common .tribe-common-anchor-thin:active,
+.tribe-common .tribe-common-anchor-thin:focus,
+.tribe-common .tribe-common-anchor-thin:hover {
+  border-bottom: 1px solid var(--main_primary);
+}
