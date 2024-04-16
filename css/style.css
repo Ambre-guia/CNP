@@ -1572,9 +1572,13 @@ li.current_page_item > a {
 .tribe-common .tribe-common-anchor-thin:hover {
   border-bottom: 1px solid var(--main_primary);
 }
-.tribe-events-meta-group a {
+.tribe-events-meta-group a,
+.tribe-events-content a {
   color: var(--main_secondary);
   font-family: var(--font-default);
+}
+.tribe-events-content a {
+  border-bottom-color: var(--main_secondary);
 }
 .tribe-events-content {
   color: var(--grey);
