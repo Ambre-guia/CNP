@@ -1576,3 +1576,6 @@ li.current_page_item > a {
   color: var(--main_secondary);
   font-family: var(--font-default);
 }
+.tribe-events-content {
+  color: var(--grey);
+}
