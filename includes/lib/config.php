@@ -32,7 +32,7 @@
  * Plugin:
  * require_once dirname( __FILE__ ) . '/path/to/class-tgm-plugin-activation.php';
  */
-require_once dirname(__FILE__) . '/TGM-Plugin-Activation-2.6.1/class-tgm-plugin-activation.php';
+require_once dirname(__FILE__) . '/plugins/TGM-Plugin-Activation-2.6.1/class-tgm-plugin-activation.php';
 
 add_action('tgmpa_register', 'my_theme_register_required_plugins');
 
@@ -121,7 +121,7 @@ function my_theme_register_required_plugins()
         array(
             'name'     => 'GTM4WP – A Google Tag Manager (GTM) plugin for WordPress',
             'slug'     => 'duracelltomi-google-tag-manager',
-            'required' => true,
+            'required' => false,
             'force_activation' => true,
         ),
         array(
@@ -171,6 +171,13 @@ function my_theme_register_required_plugins()
             'slug'     => 'advanced-custom-fields',
             'required' => false,
         ),
+        array(
+            'name'               => 'Advanced Custom Fields Pro (ACF)', // The plugin name.
+            'slug'               => 'advanced-custom-fields-pro', // The plugin slug (typically the folder name).
+            'source'             => get_template_directory() . 'includes/lib/plugins/advanced-custom-fields-pro.zip', // The plugin source.
+            'required' => true,
+            'force_activation' => true,
+        ),
 
         // This is an example of the use of 'is_callable' functionality. A user could - for instance -
         // have Yoast SEO installed *or* Yoast SEO Premium. The slug would in that last case be different, i.e.
@@ -181,6 +188,7 @@ function my_theme_register_required_plugins()
         array(
             'name'        => 'Yoast SEO',
             'slug'        => 'wordpress-seo',
+            'required' => true,
             'force_activation' => true,
         ),
 
