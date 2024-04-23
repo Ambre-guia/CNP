@@ -174,7 +174,7 @@ function my_theme_register_required_plugins()
         array(
             'name'               => 'Advanced Custom Fields Pro (ACF)', // The plugin name.
             'slug'               => 'advanced-custom-fields-pro', // The plugin slug (typically the folder name).
-            'source'             => get_template_directory() . 'includes/lib/plugins/advanced-custom-fields-pro.zip', // The plugin source.
+            'source'             => get_template_directory() . '/includes/lib/plugins/advanced-custom-fields-pro.zip', // The plugin source.
             'required' => true,
             'force_activation' => true,
         ),
