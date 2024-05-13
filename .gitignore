@@ -6,6 +6,8 @@
 *.sql.gz
 ~*
 
+node_modules/
+
 .htaccess
 .maintenance
 
