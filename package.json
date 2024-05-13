@@ -1,0 +1,22 @@
+{
+  "name": "cnp",
+  "version": "1.0.0",
+  "description": "Theme parent WP projet cnp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "gulp minify-css minify-js minify-html",
+    "minify-css": "gulp minify-css",
+    "minify-js": "gulp minify-js",
+    "minify-html": "gulp minify-html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}
