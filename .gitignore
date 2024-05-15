@@ -10,6 +10,7 @@ node_modules/
 
 .htaccess
 .maintenance
+.env
 
 wp-config.php
 sitemap.xml
