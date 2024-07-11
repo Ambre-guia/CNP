@@ -15,6 +15,19 @@ function initEvents() {
     jQuery("body").toggleClass("menu-collapse");
     jQuery(".ui-helper-hidden-accessible").hide();
   });
+
+  jQuery(".mast-head nav .search").click(function (event) {
+    event.preventDefault();
+    jQuery(".mast-head .search-wrapper").show();
+  });
+
+  jQuery(".mast-head .search-wrapper form button.close").click(function (
+    event
+  ) {
+    event.preventDefault();
+    jQuery(".mast-head .search-wrapper").hide();
+  });
+
   //submenu top
   jQuery("body .mast-head nav a").click(function (event) {
     // console.log('ok');
@@ -43,23 +56,19 @@ function initTriggers() {
       navPosition: "bottom",
       navPosition: "bottom",
       items: 1,
-      gutter: 5,
-      edgePadding: 60,
       center: true,
       autoplay: true,
       autoplayButtonOutput: false,
       autoplayHoverPause: true,
       responsive: {
         640: {
-          gutter: 0,
-          items: 3,
+          items: 2,
         },
         768: {
-          gutter: 5,
+          items: 2,
         },
         991: {
-          gutter: 2,
-          items: 6,
+          items: 3,
         },
       },
     });
@@ -118,4 +127,12 @@ function initTriggers() {
       },
     });
   }
+  // Focus-visible change
+  jQuery(".mast-head .search-wrapper form #search")
+    .focus(function () {
+      jQuery(".mast-head .search-wrapper form").addClass("focus-visible");
+    })
+    .blur(function () {
+      jQuery(".mast-head .search-wrapper form").removeClass("focus-visible");
+    });
 }
