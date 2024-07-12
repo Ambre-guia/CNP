@@ -16,10 +16,10 @@
 <div class="layout layout-blog container">
     <article>
         <?php
+        $s = get_search_query();
         echo"<header class='page-header'>
                 <h1 class='page-title'>Résultat de recherche pour :". $S ." </h1>
             </header>";
-        $s = get_search_query();
         $args = array(
             's' => $s
         );
