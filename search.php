@@ -18,7 +18,7 @@
         <?php
         $s = get_search_query();
         echo"<header class='page-header'>
-                <h1 class='page-title'>Résultat de recherche pour :". $S ." </h1>
+                <h1 class='page-title'>Résultat de recherche pour :". $s ." </h1>
             </header>";
         $args = array(
             's' => $s
