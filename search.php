@@ -17,7 +17,7 @@
     <article>
         <?php
         echo"<header class='page-header'>
-                <h1 class='page-title'>Résultat de recherche pour :". get_search_query() ." </h1>
+                <h1 class='page-title'>Résultat de recherche pour : ". get_search_query() ." </h1>
             </header>";
         $s = get_search_query();
         
