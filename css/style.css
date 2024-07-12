@@ -1557,30 +1557,6 @@ li.current_page_item > a {
 .sidebar-block ul li {
   margin-bottom: 10px;
 }
-/*== SEARCH RESULT ==*/
-.layout-2-col-blog .container {
-  width: auto;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  color: var(--main_primary);
-}
-.layout-2-col-blog .container .close {
-  display: none;
-}
-.layout-2-col-blog .container button {
-  width: 35px;
-  border: 0;
-  color: var(--mediumgrey);
-  font-size: 1.5em;
-  background-color: transparent;
-  height: 35px;
-  cursor: pointer;
-}
-.layout article .result .item-title {
-  border-bottom: 1px solid var(--main_secondary_light);
-  padding-bottom: 0.3em;
-}
 
 /*== PLUGIN STYLE ==*/
 
@@ -1660,4 +1636,12 @@ li.current_page_item > a {
 .tribe-events-content,
 .tribe-events-meta-group {
   color: var(--grey);
+}
+
+/* SEARCH PAGE*/
+.search .page-title {
+  font-size: 2.5em;
+}
+.search .item-search {
+  font-size: 1.4em;
 }
