@@ -469,7 +469,7 @@ option {
   .main-nav > ul li:hover a {
   }
    .mast-head .main-nav .search .fas {
-    display: bloc;
+    display: block;
    }
   .mast-head .hamburger {
     display: none;
