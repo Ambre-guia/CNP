@@ -359,6 +359,7 @@ option {
 }
 .mast-head .main-nav .search .fas {
   color: var(--darkgrey);
+  display: none;
 }
 .menu-collapse .main-nav {
   flex-wrap: wrap !important;
@@ -467,6 +468,9 @@ option {
   }
   .main-nav > ul li:hover a {
   }
+   .mast-head .main-nav .search .fas {
+    display: bloc;
+   }
   .mast-head .hamburger {
     display: none;
   }
