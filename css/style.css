@@ -435,7 +435,7 @@ option {
   font-weight: 500;
   font-size: 0.9em;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .mast-head .main-nav {
     position: relative;
     align-items: flex-end;
