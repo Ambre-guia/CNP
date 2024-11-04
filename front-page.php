@@ -2,7 +2,7 @@
 
     <!-- HERO -->
     <?php 
-    get_template_part("includes/partial/hero.php");
+    require("includes/partial/hero.php");
     ?>
   
     <!-- END HERO -->
@@ -14,41 +14,41 @@
         'start_date'     => 'now',
     ] );
     if ( !empty( $events ) ) :
-        get_template_part("includes/partial/events-cards.php");
+        require("includes/partial/events-cards.php");
     endif;
     ?>
     <!-- END EVENTS -->
 
     <!-- MISSION GRID -->
     <?php 
-    get_template_part("includes/partial/mission-grid.php");
+    require("includes/partial/mission-grid.php");
     ?>
     <!-- END MISSION GRID -->
 
     <!-- BANNIERE -->
     <?php 
-    get_template_part("includes/partial/cta-banner.php");
+    require("includes/partial/cta-banner.php");
     ?>
         <!-- END BANNIERE -->
 
     <!-- CTA -->
     <?php 
-    get_template_part("includes/partial/cta-big.php");
+    require("includes/partial/cta-big.php");
     ?>
 
     <!-- 2 blocks -->
     <?php 
-    get_template_part("includes/partial/frontpage-two-cards.php");
+    require("includes/partial/frontpage-two-cards.php");
     ?>
 
     <!-- Actualités -->
     <?php 
-    get_template_part("includes/partial/news-cards-feed.php");
+    require("includes/partial/news-cards-feed.php");
     ?>
 
     <!-- Composition -->
     <?php 
-    get_template_part("includes/partial/partners-feed.php");
+    require("includes/partial/partners-feed.php");
     ?>
 
 <?php get_footer(); ?>
