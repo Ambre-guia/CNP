@@ -16,18 +16,6 @@ function initEvents() {
     jQuery(".ui-helper-hidden-accessible").hide();
   });
 
-  jQuery(".mast-head nav .search").click(function (event) {
-    event.preventDefault();
-    jQuery(".mast-head .search-wrapper").show();
-  });
-
-  jQuery(".mast-head .search-wrapper form button.close").click(function (
-    event
-  ) {
-    event.preventDefault();
-    jQuery(".mast-head .search-wrapper").hide();
-  });
-
   //submenu top
   jQuery("body .mast-head nav a").click(function (event) {
     // console.log('ok');
@@ -127,12 +115,4 @@ function initTriggers() {
       },
     });
   }
-  // Focus-visible change
-  jQuery(".mast-head .search-wrapper form #search")
-    .focus(function () {
-      jQuery(".mast-head .search-wrapper form").addClass("focus-visible");
-    })
-    .blur(function () {
-      jQuery(".mast-head .search-wrapper form").removeClass("focus-visible");
-    });
 }
