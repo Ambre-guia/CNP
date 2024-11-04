@@ -48,8 +48,5 @@
                 </span>
             </button>
         </nav>
-        <div class="search-wrapper">
-            <?php get_search_form(); ?>
-        </div>
     </header>
     <main>
