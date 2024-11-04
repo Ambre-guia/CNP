@@ -41,7 +41,7 @@
                 'theme_location' => 'header-menu',
                 'container' => 'ul',
             )); ?>
-            <a href="#" class="search"><i class="fas fa-search"></i></a>
+            
             <button class="hamburger hamburger--emphatic" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
