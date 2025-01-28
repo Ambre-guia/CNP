@@ -100,16 +100,21 @@ table {
   color: var(--main_primary_dark);
 }
 table tr:nth-child(even) {
-  background-color: var(--lightgrey);
+  background-color: var(--main_primary_light);
+}
+table tr:nth-child(odd) {
+  background-color: var(--main_primary_lighter);
 }
 table tr td {
   padding: 1em 0.5em;
   border: 0;
 }
 table thead tr th {
+  font-weight: 300;
   text-align: left;
   padding: 1em 0.5em;
-  color: var(--main_primary_dark);
+  background-color: var(--main_primary_dark);
+  color: var(--white);
 }
 table tbody tr td {
 }
