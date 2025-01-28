@@ -116,7 +116,8 @@ table thead tr th {
   background-color: var(--main_primary_dark);
   color: var(--white);
 }
-table tbody tr td {
+table tr :first-child {
+  border-right: 1px solid var(--white);
 }
 table tbody tr td span {
   display: block;
