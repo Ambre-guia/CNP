@@ -99,6 +99,10 @@ table {
   font-size: 0.85em;
   color: var(--main_primary_dark);
 }
+
+table.has-fixed-layout {
+  table-layout: fixed;
+}
 table tr:nth-child(even) {
   background-color: var(--main_primary_light);
 }
