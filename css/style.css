@@ -110,7 +110,6 @@ table tr td {
   border: 0;
 }
 table thead tr th {
-  font-weight: 300;
   text-align: left;
   padding: 1em 0.5em;
   background-color: var(--main_primary_dark);
